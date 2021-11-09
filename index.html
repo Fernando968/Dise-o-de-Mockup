@@ -1,44 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FERNANDO</title>
-        <link rel="stylesheet" href="css/estilos.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    </head>
-    <body>
-        <div class="container">
-            <h1>NUEVA TAREA</h1>
-            <div id="header">
-                <input type="text" id="title" placeholder="Titulo de la tarea" class="form-control">
-                <textarea id="description"  placeholder="Descripción de la tarea"  class="form-control"></textarea> 
-                <button id="boton">GUARDAR</button>
-            </div>
-            <h2>LISTA DE TAREAS</h2>
-            <div class="container-checkbox">
-                <p>
-                    <input class="cajita" type="checkbox">
-                    Completar ejercicios de álgebra
-                    <i id="a"class="fas fa-eye"></i>
-                    <i class="far fa-edit"></i>
-                    <i class="fas fa-trash-alt"></i>
-                </p>
-                <p>
-                    <input class="cajita" type="checkbox" >
-                    Completar ejercicios de álgebra
-                    <i class="fas fa-eye"></i>
-                    <i class="far fa-edit"></i>
-                    <i class="fas fa-trash-alt"></i>
-                </p>
-                <p>
-                    <input class="cajita" type="checkbox">
-                    Completar ejercicios de álgebra
-                    <i class="fas fa-eye"></i>
-                    <i class="far fa-edit"></i>
-                    <i class="fas fa-trash-alt"></i>
-                </p>
-            </div>       
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FERNANDO</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<dialog style="width: 100%;"id="task-detail-dialog">
+    <div class="dialog">
+        <div class="task-detail">
+            <div id="close-dialog" class="close-dialog">x</div>
+            <div id="task-detail"></div>
+        </div> 
+    </div>         
+</dialog>
+<body>
+    <div class="container">
+        <h1>NUEVA TAREA</h1>
+        <div id="header">
+            <input type="text" id="title" placeholder="Titulo de la tarea" class="form-control">
+            <input id="description"  type="text" placeholder="Descripción de la tarea"  class="form-control"></input> 
+            <button id="boton" type="submit">GUARDAR</button>
         </div>
-    </body>
+        <h2>LISTA DE TAREAS</h2>
+        <div class="container-checkbox" id="list-container">
+                
+        </div>       
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
 </html>
+
+

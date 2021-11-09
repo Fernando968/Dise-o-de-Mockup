@@ -1,21 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 body{
-  background-color: #F0ECEC;
+  background-image: url(../Img/Fondo4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 0px;
+  width: 100%;
+  height: 100vh;
 }
 .container {
-    width: 70%;
-    height: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    font-family: helvetica;
-    flex-direction: column;
-    margin-left: 12em;
-    margin-top: 5em;
-
-    
-  }
+  width: 70%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-family: helvetica;
+  flex-direction: column;
+  margin-left: 15em; 
+}
 #header {
   display: flex;
   justify-content: space-evenly;
@@ -36,6 +39,8 @@ body{
   align-items: center;
   justify-content: center;
   margin-top: 0.8em;
+  cursor: pointer;
+  font-family: 'Russo One', sans-serif;
 }
 .form-control{
   margin: 0.5em;
@@ -44,19 +49,25 @@ body{
 }
 #description{
   height: 3.5em;
+  font-family: monospace;
+}
+#title{
+  font-family: monospace;
 }
 
 .container > h1 {
   text-align: center;
-  margin-top: 0px;
+  margin-top: 5em;
   margin-bottom: 0px;
+  font-family: 'Russo One', sans-serif;
 }
 .container > h2{
   text-align: center;
+  font-family: 'Russo One', sans-serif;
 }
 .container-checkbox{
   margin-top: 2em;
-  color: rgb(13, 14, 14);
+  color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 80%;
   flex-direction: column;
@@ -80,18 +91,96 @@ input[type="image" i] {
 .fas.fa-trash-alt{
   color: #F24E1E;
   margin-left: 1em;
+  cursor: pointer;
 }
 .fas.fa-eye{
   color: #699BF7;
   margin-left: 20em;
+  cursor: pointer;
 }
 .far.fa-edit{
   color: #4ECB71;
   margin-left: 1em;
+  cursor: pointer;
 }
 .cajita{
   margin-left: 5em;
 }
+
+.dialog{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 0px;
+  border: 0px;
+}
+#task-detail-dialog{
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.task-detail{
+  background-image: url(../Img/Fondo5.PNG);
+  width: 45%;
+  min-height: 20rem;
+  padding: 2em;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.task-detail-title{
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+}
+.task-detail-description{
+  font-weight: lighter;
+  font-family: monospace;
+  margin-top: 2em;
+}
+.task-detail-complete{
+  margin-top: 1em;
+  font-family: 'Russo One', sans-serif;
+}
+.close-dialog{
+  text-align: end;
+  cursor: pointer;
+}
+
+.task-edit-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.task-edit-container > button{
+  margin-top: 3em;
+  font-family: 'Russo One', sans-serif;
+  width: 30%;
+  height: 2em;
+  color: black;
+  background-color: #C4C4C4;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 5em;
+}
+.task-edit-container input{
+  width: 70%;
+}
+.task-edit-container textarea{
+  width: 70%;
+}
+
+
 
 
 @keyframes slide-up {
